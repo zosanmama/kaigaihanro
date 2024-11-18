@@ -4,105 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myriashue - Educational Institution Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #0056a6;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            color: #0056a6;
-        }
-        .cta {
-            background-color: #0056a6;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .cta a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .price-table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-        .price-table th, .price-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .price-table th {
-            background-color: #f2f2f2;
-        }
-        .button {
-            display: inline-block;
-            background-color: #0056a6;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Create Unique Characters for Your Institution</h1>
+<!-- ヘッダー -->
+<header class="header">
+    <a href="https://www.myriashue.co.jp/"><img src="/img/myriashue.logo.jpg" alt="ミリアッシュのロゴ"></a>
+    <nav>
+        <a href="#works">Works</a>
+        <a href="#company">Company</a>
+        <a href="#media">Media</a>
+        <a href="#store">Store</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<main>
 <div class="container">
+    <!-- トップ -->
+    <section class="top">
+        <div class="top-content">
+            <p>Original character creation is easy and full of potential</p>
+        </div>
+    </section>
     <!-- Section 1 -->
-    <section>
-        <h2>Unique Character Design</h2>
-        <p>Let us create custom characters for your educational institution:</p>
+    <section class="fv">
+        <div class="section-title">
+            <h2>Unique Character Design</h2>
+            <img src="/img/fv.jpg">
+        </div>
+        <div class="fv-content">
+        <h3 class="content-title">Let us create custom characters for your educational institution:</h3>
         <ul>
             <li>Characters crafted from scratch</li>
             <li>Designs inspired by your existing logo</li>
             <li>Portrait-based designs of your iconic teachers</li>
         </ul>
+        </div>
         <!-- Illustration Placeholder -->
         <!-- Suggested: Illustration of a teacher character holding a book with a cheerful classroom background -->
     </section>
 
     <!-- Section 2 -->
-    <section>
-        <h2>Applications</h2>
-        <p>Where can you use our character designs?</p>
+    <section class="applications">
+        <div class="app-content">
+        <h3>Where can you use our character designs?</h3>
         <ul>
             <li>Website: Characters can explain and engage, leaving a lasting impression.</li>
             <li>Flyers: Memorable and inviting designs beyond simple logos.</li>
@@ -110,13 +57,19 @@
             <li>WhatsApp Stickers: Spread the word through parent-to-parent promotion.</li>
             <li>Videos: Let characters deliver messages in a relatable way!</li>
         </ul>
+    </div>
+    <h2 class="section-title">Applications</h2>
         <!-- Illustration Placeholder -->
         <!-- Suggested: Example applications such as characters on a flyer, a T-shirt, and a WhatsApp chat with stickers -->
     </section>
 
     <!-- Section 3 -->
-    <section>
-        <h2>Pricing</h2>
+    <section class="price">
+        <div class="section-title">
+            <h2 class="section-title" class="price-title">How much does it cost?</h2>
+            <img src="/img/goods.jpg">
+        </div>
+        <div class="price-content">
         <table class="price-table">
             <tr>
                 <th>Service</th>
@@ -139,29 +92,79 @@
                 <td>Starting at $200</td>
             </tr>
         </table>
+    </div>
     </section>
 
     <!-- Section 4 -->
     <section class="cta">
-        <h2>Contact Us Now!</h2>
-        <a href="#contact-form" class="button">Get in Touch</a>
+        <div class="cta-content">
+            <p>A full-time translator will assist you with a professional team that produces high-quality illustrations.</p>
+            <div>
+                <img src="/img/takeyasan.jpg">
+                <img src="/img/sugiyamasan.jpg">
+                <img src="/img/teraisan.jpg">
+            </div>
+            <div>
+                <a href="#contact-form" class="button">Talk to Us Now!</a>
+            </div>
+        </div>
+        <div class="cta-title">
+        <h2 class="section-title">I am interested!!</h2>
+        </div>
     </section>
 
     <!-- Section 5 -->
-    <section>
-        <h2>About Myriashue</h2>
-        <p>With 7 years of experience and over 15,000 illustrations created, Myriashue is a trusted Japanese company specializing in illustration design and production.</p>
-        <p>Our collaborations include US-based YouTubers and global projects.</p>
-        <blockquote>"With a quest for further possibility of illustrations"</blockquote>
-        <p><a href="https://www.myriashue.co.jp/" target="_blank">Learn more about us</a></p>
+    <section class="about">
+        <div class="about-title">
+            <h2 class="section-title" class="about-section-title">About Myriashue</h2>
+            <img src="/img/myriashue.logo_small.jpg" alt="myriashue logo">
+        </div>
+        <div class="about-content">
+            <p>With 7 years of experience and over 15,000 illustrations created, Myriashue is a trusted Japanese company specializing in illustration design and production.</p>
+            <p>Our collaborations include US-based YouTubers and global projects.</p>
+            <blockquote>"With a quest for further possibility of illustrations"</blockquote>
+            <p class="about-url"><a href="https://www.myriashue.co.jp/" target="_blank">Learn more about us</a></p>
+        </div>
         <!-- Illustration Placeholder -->
         <!-- Suggested: A professional and creative illustration of the Myriashue logo or a team working on designs -->
     </section>
 </div>
+</main>
 
-<footer>
-    <p>&copy; 2024 Myriashue. All Rights Reserved.</p>
-</footer>
+    <!-- フッター -->
+    <footer>
+            <div class="footer-links">
+                <div>
+                    <h4>ABOUT</h4>
+                    <a href="#">会社概要</a>
+                    <a href="#">フィロソフィー</a>
+                    <a href="#">メンバー</a>
+                    <a href="#">沿革</a>
+                    <a href="#">スポンサー・リレーション</a>
+                </div>
+                <div>
+                    <h4>SERVICE</h4>
+                    <a href="#">イラスト・ゲームイラスト制作</a>
+                    <a href="#">イラスト企画・プロデュース</a>
+                </div>
+                <div>
+                    <h4>SPECIALS</h4>
+                    <a href="#">メディア</a>
+                    <a href="#">ストア</a>
+                    <a href="#">NFTアート販売</a>
+                    <a href="#">note</a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="description">
+                    <p>株式会社ミリアッシュは、誠実丁寧なイラスト・ゲームイラスト制作を通じ、クライアント様の求めに応えるクリエイティブを全力で制作する企業です。</p>
+                </div>
+                <div class="tos">
+                    <p>規約と条件 | プライバシーポリシー</p>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2024 Myriashue. All Rights Reserved.</p> 
+    </footer>
 
 </body>
 </html>
