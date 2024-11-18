@@ -1,0 +1,446 @@
+@charset "UTF-8";
+
+/* ----- common ------ */
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+
+.section-title {
+    color: #ffffff;
+}
+
+/* ----- header ----- */
+.header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.header a:hover {
+    color: #0056a6;
+}
+
+/* ------- top ----------- */
+.top {
+    margin-bottom: 40px;
+}
+
+
+.top-content p {
+    font-size: 2rem;
+    padding: 10px;
+    animation: colorSwap 25s infinite;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* アニメーションの定義 */
+  @keyframes colorSwap {
+    0% {
+        background-color:#C0292C;
+        color: white;
+        transform: scale(0.8);
+    }
+    50% {
+      background-color:#C0292C;
+      color: white;
+      transform: scale(1.2);
+    }
+    100% {
+        background-color:#C0292C;
+        color: white;
+        transform: scale(0.8);  
+    }
+  }
+/* ------- fv ----------- */
+.fv {
+    background: linear-gradient(
+        300deg,
+        transparent 0%,
+        transparent 50%,
+        #c43a3c 50%,
+        #c43a3c 100%
+      );
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.fv img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.fv img:hover {
+    transform:rotateX(45deg);
+}
+
+.fv-content {
+    background-color: #333;
+    color: #ddd;
+    margin-top: 80px;
+    height: 200px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.fv:hover .fv-content {
+    background-color: #0056a6;
+}
+
+
+/* ------- applications ----------- */
+.applications {
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #C0292C 50%,
+        #C0292C 100%
+      );
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+
+.app-content {
+    background-color: #504f4f;
+    color: #ddd;
+    margin-top: 80px;
+    height: 200px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.applications:hover .app-content {
+    background-color: #03573e;
+}
+
+/* ------- price ----------- */
+.price {
+    background: linear-gradient(
+        300deg,
+        transparent 0%,
+        transparent 70%,
+        #c43a3c 50%,
+        #c43a3c 100%
+      );
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.price-title {
+    width: 30%;
+}
+
+.price img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.price img:hover {
+    transform:rotateX(45deg);
+}
+
+.price-content {
+    width: 70%;
+}
+.price-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.price-table th, .price-table td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.price-table th {
+    text-align: center;
+    background-color: #504f4f;
+    color: #ddd;
+}
+
+.price:hover .price-table th {
+    background-color: #0056a6;
+}
+
+.price-table td {
+    text-align: left;
+}
+
+.price:hover .price-content {
+    color: #0056a6;
+    font-weight: bold;
+}
+
+/* ----- cta ----- 
+.cta {
+    background-color: #0056a6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+*/
+
+.cta {
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 60%,
+        #C0292C 50%,
+        #C0292C 100%
+      );
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.cta-content {
+    width: 75%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-content p {
+    width: 50%;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.cta-content div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cta-content img {
+    width: 100px;
+}
+
+.cta-content img:hover {
+    animation: buruburu .1s infinite;
+}
+
+@keyframes buruburu {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: #0056a6;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cta-title {
+    width: 25%;
+    margin-top: 200px;
+    margin-right: 20px;
+}
+
+/* ------- about ----------- */
+.about {
+    background: linear-gradient(
+        300deg,
+        transparent 0%,
+        transparent 70%,
+        #c43a3c 50%,
+        #c43a3c 100%
+      );
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.about-sction-title div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    width: 70%;
+    padding-left: 10%;
+}
+
+.about-content blockquote {
+    font-weight: bold;
+}
+
+.about-content a {
+    font-size: 1.4rem;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.about-url {
+    width: 300px;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+.about-url:hover {
+    animation: buruburu .1s infinite;
+    background-color: #c43a3c;
+}
+
+.about-title img {
+    width: 30px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+/* ----- Footer ----- */
+.footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 0px ;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0.1px solid #a9a6a6;
+}
+
+.footer-links div {
+    text-align: left;
+}
+
+.footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #C0292C;
+}
+
+.footer-links div a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-links div a:hover {
+    color:#C0292C;
+}
+
+.footer-middle {
+    display: flex;
+    align-items: center;
+    justify-content: content;
+    padding-left: 30px;
+}
+
+.description {
+    width: 50%;
+    font-size: small;
+    color: #666;
+}
+
+.tos {
+    width: 40%;
+    font-size: small;
+    color: #666;
+    text-align: right;
+}
+
+.footer-bottom {
+    width: 100%;
+    font-size: xx-small;
+    text-align: center;
+}
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
